@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto: Upper & LowerCase</title>
+        <link rel="icon" href="./imagens/iconLaura.png"/>
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+        <!--Fontes-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">   
+        <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+        <!--CSS-->
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="logoHeader">
+            <img class="mx-auto d-block" src="./imagens/logoBranco.png">                 
+        </div>
+        <div class="redes d-flex mb-5 pt-2">
+            <h5> Conheça minhas redes:</h5>
+            <a class='d-flex' href='https://www.linkedin.com/in/laura-armendane-158a59193/' target="_blank">
+                <img class='mx-auto d-block' src="./imagens/linkedin.png">
+                <h5>Laura Armendane</h5>
+            </a>
+            <a class='d-flex' href='https://github.com/LLArmendane' target="_blank">
+                <img class='mx-auto d-block' src="./imagens/github.png">
+                <h5>LLArmendane</h5>
+            </a>                
+        </div>   
+        <div class="text-center">
+            <h2>Projeto: Upper & LowerCase</h2>
+        </div>
+        <div class="d-flex text-center mt-5">
+            <form class="mb-3 p-2 w-5 d-flex mx-auto d-block" id="form">
+                <div>
+                    <label for="formGroupExampleInput" class="form-label">Texto a ser convertido</label>
+                    <input class="form-control texto" type="text" id="text">
+                </div>
+                <div class="">
+                    <input class="form-control mt-2 pl-2" type="submit" id="btnMaiusculo" value="Mudar para maiúsculo">
+                    <input class="form-control mt-2 pl-2" type="submit" id="btnMinusculo" value="Mudar para minúsculo">
+                    <input class="form-control mt-2 pl-2" type="reset" id="btnLimpar" value="Limpar tudo">
+                </div>
+                <div>
+                    <label for="formGroupExampleInput" class="form-label">Texto convertido</label>
+                    <input class="form-control texto" type="text" id="resultado" disabled="disabled">
+                </div>
+            </form>
+        </div>
+
+        <script src="script.js"></script>
+        
+    </body>
+</html>
